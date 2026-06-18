@@ -2592,7 +2592,6 @@ color=color, ha='center', va='bottom')
 2238 output_path = r"D:\Trial 2\ISEF_UMAP_Final_Publ ication_Ready.csv"
 2239 umap_data.to_csv(output_path, index=False)
 2240 print(f"
-✅
  Plot complete. {len(umap_data)} dots mapped and exported.")
 2241
 2242 # %%
@@ -2666,7 +2665,6 @@ fontweight='bold', pad=20)
 2307 plt.show()
 2308
 2309 print(f"
-✅
  Success! PR AUC: {pr_auc:.4f}")
 2310
 2311 # %%
@@ -2848,7 +2846,6 @@ localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/
 Untitled-1
 2459
 2460 print(f"
-🚀
  Current PR AUC: {pr_auc:.4f}")
 2461
 2462 # %%
@@ -2935,7 +2932,6 @@ localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/
 2534 plt.show()
 2535
 2536 print(f"
-🎯
  Achievement: PR AUC = {pr_auc:.4f}")
 2537
 2538 # %%
@@ -3035,7 +3031,6 @@ fontweight='bold')
 2614 plt.show()
 2615
 2616 print(f"
-🎯
  Achievement Unlocked: PR AUC = {pr_auc:.4f}")
 2617
 2618 # %%
@@ -3135,14 +3130,11 @@ random_state=42
 2696 plt.show()
 2697
 2698 print(f"
-🎯
  Final Nudge Result: PR AUC = {pr_auc:.4f}")
 2699
 2700 # %%
 56/70
 localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/
-2/17/26, 9:45 PM
-Untitled-1
 2701 import pandas as pd
 2702 import numpy as np
 2703 import matplotlib.pyplot as plt
@@ -3223,7 +3215,6 @@ fontweight='bold')
 2765 plt.show()
 2766
 2767 print(f"
-🎯
  Achievement: PR AUC = {pr_auc:.4f}")
 2768
 2769 # %%
@@ -3418,7 +3409,6 @@ fontweight='bold')
 2924 plt.show()
 2925
 2926 print(f"
-✅
  Final Attempt Result: PR AUC = {pr_auc:.4f}")
 2927
 2928 # %%
@@ -3512,7 +3502,6 @@ fontweight='bold')
 2999 plt.show()
 3000
 3001 print(f"
-🏁
  Final Result: PR AUC = {pr_auc:.4f}")
 3002
 3003 # %%
@@ -3601,7 +3590,6 @@ fontweight='bold')
 3072 plt.show()
 3073
 3074 print(f"
-🎯
  Achievement Unlocked: PR AUC = {pr_auc:.4f}")
 3075
 3076 # %%
@@ -3615,7 +3603,6 @@ fontweight='bold')
 3084 from sklearn.preprocessing import QuantileTransformer
 64/70
 localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/
-2/17/26, 9:45 PM
 Untitled-1
 3085
 3086 # 1. LOAD DATA
@@ -3697,8 +3684,7 @@ fontweight='bold')
 3148 plt.show()
 3149
 3150 print(f"
-✅
- Mission Accomplished: PR AUC = {pr_auc:.4f}")
+: PR AUC = {pr_auc:.4f}")
 3151
 3152 # %%
 3153 import pandas as pd
@@ -3782,7 +3768,7 @@ random_state=42
 3216 plt.axhline(y=baseline, color='#e74c3c', linestyle='--', label=f'Prevalence Baseline 
 ({baseline:.2f})')
 3217
-3218 plt.title("PRECISION-RECALL CURVE: PARKINSON'S PHENOTYPE VALIDATION", fontsize=14, 
+3218 plt.title("PRECISION-RECALL CURVE: PARKINSON'S ", fontsize=14, 
 fontweight='bold')
 3219 plt.xlabel("Recall (Fraction of Patients Found)", fontsize=11)
 3220 plt.ylabel("Precision (Accuracy of Flags)", fontsize=11)
@@ -3793,7 +3779,6 @@ fontweight='bold')
 3225 plt.show()
 3226
 3227 print(f"
-✅
  Validation Complete: PR AUC = {pr_auc:.4f}")
 3228
 3229 # %%
@@ -3863,15 +3848,14 @@ Untitled-1
 3282 plt.figure(figsize=(8, 8))
 3283 CalibrationDisplay.from_estimator(model, X_test, y_test, n_bins=10, name='Final Calibrated 
 Model')
-3284 plt.title('Reliability Diagram (Model Trustworthiness)', fontweight='bold')
+3284 plt.title(' Diagram )', fontweight='bold')
 3285 plt.show()
 3286
 3287 # --- DIAGRAM 4: THE 0.94 PR CURVE --
 3288 probs = model.predict_proba(X_test)[:, 1]
 3289 pre, rec, _ = precision_recall_cur ve(y_test, probs)
 3290 print(f"
-✅
- Final Confirmed PR AUC: {auc(rec, pre):.4f}")
+ PR AUC: {auc(rec, pre):.4f}")
 3291
 3292 # %%
 3293 import pandas as pd
@@ -3925,7 +3909,6 @@ localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/
 3339 t_stat, p_val = ttest_ind(pd_drop, hc_drop)
 3340
 3341 print(f"
-📊
  Statistical Separation (p-value): {p_val:.8f}")
 3342
 3343
