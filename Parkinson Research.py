@@ -440,7 +440,6 @@ localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/ 7/70
 386            plt.savefig(save_path, bbox_inches='tight', pad_inches=0)
 387            plt.close('all')
 388            print(f"
-✅
  Created: {f}")
 389        else:
 2/17/26, 9:45 PM Untitled-1
@@ -452,11 +451,9 @@ localhost:55470/67c4c088-f490-4e83-8823-66ab62b265f4/ 8/70
 391            
 392    except Exception as e:
 393        print(f"
-❌
  Failed on {f}: {e}")
 394
 395 print(f"\n
-✨
  FINISHED. Check the folder on your Desktop. You should see {len(files)} 
 images.")
 396
